@@ -13,7 +13,7 @@ class Rectangle {
   }
 
   getArea() {
-    return this.width * this.height;
+    return this._width * this._height;
   }
 }
 
@@ -23,14 +23,10 @@ class Square extends Rectangle {
   }
 
   getPerimeter() {
-    return 4 * this.width; // Use `this.width` or `this.height` as both are the same in a square
+    return 4 * this._width; // Use `this.width` or `this.height` as both are the same in a square
   }
 }
 
-// Example usage:
-const square = new Square(5);
-console.log(square.getArea()); // Output: 25
-console.log(square.getPerimeter()); // Output: 20
 
 
 // Do not change the code below this line
